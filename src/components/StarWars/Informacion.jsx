@@ -1,7 +1,7 @@
 import { Card, CardActions, CardContent, CardMedia, Link, Grid, Typography, Box } from "@mui/material"
 
 const Informacion = ({info}) => {
-  
+    
   const {
     title, 
     name,
@@ -38,7 +38,7 @@ const Informacion = ({info}) => {
         <Grid item md={4} lg={2}>
           <Box border={1} borderColor='primary.main'>
             <CardContent sx={{backgroundColor:'#000000', borderColor:'#ffeb3b'}}>
-              <Typography variant="h5" component={'div1'} color='secondary'>
+              <Typography variant="h5" component={'div'} color='secondary'>
                 <span>Nombre:</span> <br></br> {title || name}
               </Typography>
               {
