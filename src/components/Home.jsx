@@ -16,8 +16,7 @@ const Home = () => {
         <Grid
           container
           direction='row'
-          justifyContent='Center'
-          
+          justifyContent='Center'          
           paddingTop={'4rem'}
         >
           <Button 

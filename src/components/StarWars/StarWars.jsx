@@ -4,11 +4,13 @@ import ListadoInformacion from "./ListadoInformacion"
 import { StarWarsProvider } from "../../context/StarWarsProvider"
 
 const StarWars = () => {
+  
   return (
     <StarWarsProvider>
-      <Container>
+      <Container >
         <header>
-          <Typography
+          <Typography 
+              position={'static'}
               color={'#ffeb3b'}
               align='center'
               marginY={5}

@@ -4,8 +4,8 @@ import starWarsImg from '../../images/starWars.png'
 
 const Header = () => {
   return (
-    <Box sx={{ flexGrow: 1}}>
-      <AppBar position="static" sx={{marginBottom: '2rem', height:'6rem', backgroundColor: 'rgba(67, 54, 54, 0.4)'}}>
+    <Box sx={{ flexGrow: 1}} >
+      <AppBar position="static"  sx={{marginBottom: '2rem', height:'6rem', backgroundColor: 'rgba(67, 54, 54, 0.4)'}}>
         <Toolbar>
           <Grid
             container

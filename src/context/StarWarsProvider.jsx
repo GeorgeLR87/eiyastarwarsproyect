@@ -14,7 +14,7 @@ const StarWarsProvider = ({children}) => {
             
     
     useEffect(() => {
-            
+        
         const consultarAPI = async () => { 
             const url = `https://swapi.dev/api/${categoria}`
 
@@ -25,6 +25,7 @@ const StarWarsProvider = ({children}) => {
             setTotalDatos(data.count)
         }
         consultarAPI()
+        
     }, [categoria])
 
             
@@ -38,7 +39,9 @@ const StarWarsProvider = ({children}) => {
             setTotalDatos(data.count)
             
         }
+        
         consultarAPI()
+        
     }, [pagina])
 
     const handleChangeCategoria = e => {

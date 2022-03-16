@@ -2,8 +2,9 @@ import { FormControl, InputLabel, Select, MenuItem, Button, Box } from "@mui/mat
 import useStarWars from "../../hooks/useStarWars"
 
 
+
 const CATEGORIAS = [
-  { value: 'films', label: 'Peliculas'},
+  { value: 'films', label: 'Películas'},
   { value: 'people', label: 'Personajes'},
   { value: 'planets', label: 'Planetas'},
   { value: 'species', label: 'Especies'},
@@ -17,7 +18,7 @@ const Formulario = () => {
 
   return (
     <form>
-      <FormControl fullWidth focused >
+      <FormControl fullWidth focused>
         <InputLabel >Categoría</InputLabel>
         <Select
           sx={{color:'#ffeb3b'}}
@@ -26,6 +27,7 @@ const Formulario = () => {
           value={categoria}
         >
           {
+            
           CATEGORIAS.map(categoria => (
                     <MenuItem
                         sx={{backgroundColor:'#ffeb3b'}}
@@ -37,16 +39,7 @@ const Formulario = () => {
                 ))}
 
         </Select>
-        <Box sx={{marginTop: 2}}>
-          <Button
-            variant="outlined" 
-            size="large" 
-            sx={{color: '#ffeb3b', padding: '1rem', fontSize: '1rem'}}
-            href='starwarsapp'
-          >
-            Buscar Categorias
-          </Button>
-        </Box>
+        
       </FormControl>
     </form>
   )

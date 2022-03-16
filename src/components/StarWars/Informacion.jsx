@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, CardMedia, Link, Grid, Typography, Box } from "@mui/material"
+import { Card, CardActions, CardContent, CardMedia, Grid, Typography, Box } from "@mui/material"
 
 const Informacion = ({info}) => {
     
@@ -33,9 +33,9 @@ const Informacion = ({info}) => {
   } = info
     
   return (
-    <Grid item md={2} lg={4}>
+    <Grid>
       <Card>
-        <Grid item md={4} lg={2}>
+        <Grid >
           <Box border={1} borderColor='primary.main'>
             <CardContent sx={{backgroundColor:'#000000', borderColor:'#ffeb3b'}}>
               <Typography variant="h5" component={'div'} color='secondary'>
