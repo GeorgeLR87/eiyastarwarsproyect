@@ -15,12 +15,12 @@ const ListadoInformacion = () => {
       </Typography>
 
     <Grid 
-          padding={1} 
-          container          
+          padding={1}        
+          margin={5}  
           >
       <Grid  
           padding={1} 
-          container          
+          margin={5}          
           >
 
         {
