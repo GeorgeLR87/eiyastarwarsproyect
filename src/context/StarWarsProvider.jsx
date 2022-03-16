@@ -10,9 +10,7 @@ const StarWarsProvider = ({children}) => {
     const [informacion, setInformacion] = useState([])
     
     useEffect(() => {
-        const consultarAPI = async () => {           
-            
-
+        const consultarAPI = async () => { 
             const url = `https://swapi.dev/api/${categoria}`
 
             const { data } = await axios(url)
@@ -20,7 +18,6 @@ const StarWarsProvider = ({children}) => {
             setInformacion(data.results);
         }
         consultarAPI()
-
     }, [categoria])
 
     const handleChangeCategoria = e => {

@@ -5,7 +5,7 @@ import Informacion from "./Informacion"
 const ListadoInformacion = () => {
     const { informacion } = useStarWars()
 
-    console.log(informacion);
+    
   return (
       <>
     <Typography
@@ -19,7 +19,8 @@ const ListadoInformacion = () => {
 
     <Grid>
 
-        {informacion.map(info => (
+        {
+        informacion.map(info => (
             <Informacion
                 key={info.url}
                 info={info}
